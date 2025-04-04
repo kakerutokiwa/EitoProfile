@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EitoProfile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">EitoProfile</h1>
+        </header>
+        
+        <main class="main-content">
+            <section class="profile-section">
+                <div class="profile-image-container">
+                    <img src="eitoclogo.png" alt="EitoProfile Logo" class="profile-image">
+                </div>
+                <h2 class="name">菊池栄人</h2>
+                <p class="title">天才</p>
+                <div class="info-container">
+                    <p class="info-item"><i class="fas fa-birthday-cake"></i> 3/19</p>
+                    <p class="info-item"><i class="fas fa-school"></i> 横浜高校1-3</p>
+                </div>
+                <div class="share-container">
+                    <button id="share-button" class="share-button">
+                        <i class="fas fa-share-alt"></i> 共有
+                    </button>
+                </div>
+            </section>
+
+            <section class="about-section">
+                <h3><i class="fas fa-user"></i> 自己紹介</h3>
+                <p>1000年に1度の奇跡の天才</p>
+                <p>菊池栄人です！</p>
+                <p>マルチに色々やってます</p>
+                <p>PCや機材全般が得意です</p>
+                <p>人と話したりするのが好きです！</p>
+                <p>よろしくお願いします！</p>
+            </section>
+
+            <section class="talents-section">
+                <h3><i class="fas fa-star"></i> 特技</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-modal="video-editing">
+                        <i class="fas fa-video"></i>
+                        <span>動画編集</span>
+                    </div>
+                    <div class="skill-item" data-modal="music-production">
+                        <i class="fas fa-music"></i>
+                        <span>音楽制作</span>
+                    </div>
+                    <div class="skill-item" data-modal="ai-development">
+                        <i class="fas fa-robot"></i>
+                        <span>AI開発</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hobbies-section">
+                <h3><i class="fas fa-heart"></i> 趣味</h3>
+                <div class="skills-grid">
+                    <div class="skill-item" data-modal="camera">
+                        <i class="fas fa-camera"></i>
+                        <span>カメラ</span>
+                    </div>
+                    <div class="skill-item" data-modal="guitar">
+                        <i class="fas fa-guitar"></i>
+                        <span>ギター</span>
+                    </div>
+                    <div class="skill-item" data-modal="piano">
+                        <i class="fas fa-keyboard"></i>
+                        <span>ピアノ</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section">
+                <h3><i class="fas fa-envelope"></i> 連絡先</h3>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="https://line.me/ti/p/4cR09iybjg" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-line"></i></a>
+                        <a href="https://www.instagram.com/eito8532/" class="social-link" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 EitoProfile. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- モーダル -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
