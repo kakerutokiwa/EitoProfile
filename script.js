@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const shareData = {
                 title: 'EitoProfile',
                 text: '菊池栄人のプロフィールページです。',
-                url: 'https://example.com'
+                url: 'https://kakerutokiwa.github.io/EitoProfile/'
             };
             
             try {
