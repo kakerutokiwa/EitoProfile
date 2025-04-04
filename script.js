@@ -214,3 +214,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 300); // トランジションの時間と同じ
     }
 });
+
